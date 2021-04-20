@@ -5,7 +5,7 @@
                 <div class="pull-left mt-2">
                     <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
                 </div>
-         
+
                 <div class="float-right my-3">
                     <a class="btn btn-success" href="{{ route('mahasiswa.create') }}"> Input Mahasiswa</a>
                 </div>
@@ -18,8 +18,8 @@
                 </div>
             </div>
         </div>
-        
-        
+
+
         @if ($message = Session::get('success'))
             <div class="alert alert-success">
                 <p>{{ $message }}</p>
@@ -46,7 +46,7 @@
                     <form action="{{ route('mahasiswa.destroy',$Mahasiswa->nim) }}" method="POST">
                         <a class="btn btn-info" href="{{ route('mahasiswa.show',$Mahasiswa->nim) }}">Show</a>
                         <a class="btn btn-primary" href="{{ route('mahasiswa.edit',$Mahasiswa->nim) }}">Edit</a>
-                            @csrf 
+                            @csrf
                             @method('DELETE')
                         <button type="submit" class="btn btn-danger">Delete</button>
                         <a class="btn btn-warning" href="{{ route('mahasiswa.khs', $Mahasiswa->nim) }}">Nilai</a>
@@ -54,12 +54,12 @@
                     </td>
                 </tr>
                 @endforeach
-            @else 
+            @else
                 <div class="float-left my-2">
                     <h5 class="text-danger">Mahasiswa Not Found !</h4>
                 </div>
                 <div class="float-right my-2">
-                    <a class="btn btn-success mt-3" href="{{ route('mahasiswa.index') }}">Kembali</a> 
+                    <a class="btn btn-success mt-3" href="{{ route('mahasiswa.index') }}">Kembali</a>
                 </div>
             @endif
         </table>

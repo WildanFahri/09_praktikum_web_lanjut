@@ -34,7 +34,7 @@ class MhsMatkulSeeder extends Seeder
             ],
             [
                 'mahasiswa_id' => Mahasiswa::min('nim'),
-                'matakuliah_id' => Matakuliah::min('id'),
+                'matakuliah_id' => Matakuliah::max('id'),
                 'nilai' => 'A'
             ],
 

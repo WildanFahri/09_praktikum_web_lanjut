@@ -46,6 +46,18 @@
                     <label for="jurusan">Jurusan</label>
                     <input type="jurusan" name="jurusan" class="form-control" id="jurusan" aria-describedby="jurusan" >
                 </div>
+                <div class="form-group">
+                    <label for="no_handphone">No Handphone</label>
+                    <input type="no_handphone" name="no_handphone" class="form-control" id="no_handphone" aria-describedby="no_handphone" >
+                </div>
+                <div class="form-group">
+                    <label for="tgl_lahir">Tanggal Lahir</label>
+                    <input type="tgl_lahir" name="tgl_lahir" class="form-control" id="tgl_lahir" aria-describedby="tgl_lahir" >
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" >
+                </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
             </div>

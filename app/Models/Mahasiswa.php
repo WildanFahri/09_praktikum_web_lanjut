@@ -9,7 +9,7 @@ use App\Models\Mahasiswa;
 class Mahasiswa extends Model{
     protected $table = "mahasiswa"; // Eloquent akan membuat model mahasiswa menyimpan record di table mahasiswa
     protected $primaryKey = 'nim'; // Memanggil isi DB dengan primary key
-    
+
     /**
      * The attributes that are mass assignable. *
      * @var array
@@ -19,7 +19,10 @@ class Mahasiswa extends Model{
         'nim',
         'nama',
         'kelas_id',
-        'jurusan'
+        'jurusan',
+        'no_handphone',
+        'tgl_lahir',
+        'email',
     ];
 
     public function kelas(){
