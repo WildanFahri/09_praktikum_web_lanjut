@@ -6,7 +6,7 @@
                 <h2>JURUSAN TEKNOLOGI INFORMASI-POLITEKNIK NEGERI MALANG</h2>
             </div>
             <div class="text-center my-3">
-                <h2>KARTU HASIL STUDI (KHS)</h2>    
+                <h2>KARTU HASIL STUDI (KHS)</h2>
             </div>
             <div>
                 <h4><span class="text-bold">Nama:</span> {{$mahasiswa->nama}}</h4>
@@ -38,4 +38,7 @@
     @endforeach
 
 </table>
-@endsection 
+<center>
+    <a class="btn btn-danger" href="{{ route('mahasiswa.cetak_pdf', $mahasiswa->nim) }}">CETAK PDF</a>
+</center>
+@endsection
